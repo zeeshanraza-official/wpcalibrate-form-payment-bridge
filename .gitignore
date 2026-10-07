@@ -1,0 +1,6 @@
+# Ignore OS & IDE metadata
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/

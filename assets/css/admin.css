@@ -1,0 +1,674 @@
+/**
+ * WPCalibrate Form Payment Bridge Admin Styles
+ *
+ * @package WPCalibrate\FormPaymentBridge
+ */
+
+/* WordPress Sidebar Menu Icon Constraint */
+#adminmenu .toplevel_page_wpcalibrate div.wp-menu-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#adminmenu .toplevel_page_wpcalibrate div.wp-menu-image img {
+	max-width: 20px !important;
+	max-height: 20px !important;
+	width: 20px !important;
+	height: 20px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+	object-fit: contain !important;
+}
+
+.wpcalibrate-fpb-wrap {
+	margin-top: 20px;
+	max-width: 1200px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+.wpcalibrate-fpb-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 24px;
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.wpcalibrate-fpb-header__brand {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.wpcalibrate-fpb-header__logo {
+	width: 38px;
+	height: 38px;
+	object-fit: contain;
+}
+
+.wpcalibrate-fpb-header__title {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: #1d2327;
+	display: inline-block;
+}
+
+.wpcalibrate-fpb-header__version {
+	display: inline-block;
+	margin-left: 8px;
+	background: #f0f0f1;
+	color: #50575e;
+	font-size: 11px;
+	padding: 2px 7px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+.wpcalibrate-fpb-header__links {
+	display: flex;
+	gap: 10px;
+}
+
+/* Navigation Tabs */
+.wpcalibrate-fpb-nav-tabs {
+	margin-bottom: 20px;
+}
+
+.wpcalibrate-fpb-nav-tabs .nav-tab {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 8px 16px;
+}
+
+/* Content Container */
+.wpcalibrate-fpb-content {
+	background: transparent;
+}
+
+/* Cards Grid */
+.wpcalibrate-fpb-cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.wpcalibrate-fpb-card {
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+	padding: 18px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.wpcalibrate-fpb-card__icon {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: #2271b1;
+}
+
+.wpcalibrate-fpb-card__title {
+	margin: 0 0 4px 0;
+	font-size: 13px;
+	color: #646970;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.wpcalibrate-fpb-card__value {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.wpcalibrate-fpb-card__sub {
+	font-size: 13px;
+	font-weight: 400;
+	color: #8c8f94;
+}
+
+/* Panels & Boxes */
+.wpcalibrate-fpb-box,
+.wpcalibrate-fpb-panel {
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 24px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.wpcalibrate-fpb-box__title,
+.wpcalibrate-fpb-panel__heading {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #1d2327;
+	border-bottom: 1px solid #f0f0f1;
+	padding-bottom: 10px;
+}
+
+/* Steps Grid */
+.wpcalibrate-fpb-steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.wpcalibrate-fpb-step {
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 8px;
+	padding: 18px;
+	position: relative;
+}
+
+.wpcalibrate-fpb-step__number {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	background: #2271b1;
+	color: #ffffff;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.wpcalibrate-fpb-step__title {
+	margin: 0 0 6px 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.wpcalibrate-fpb-step__desc {
+	margin: 0;
+	font-size: 13px;
+	color: #50575e;
+	line-height: 1.5;
+}
+
+/* Hero Banner */
+.wpcalibrate-fpb-hero {
+	background: linear-gradient(135deg, #0c1a2e 0%, #1e3a8a 100%);
+	border-radius: 8px;
+	padding: 32px;
+	color: #ffffff;
+	margin-bottom: 24px;
+	box-shadow: 0 4px 12px rgba(12, 26, 46, 0.15);
+}
+
+.wpcalibrate-fpb-hero__badge {
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.15);
+	color: #bfdbfe;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding: 4px 10px;
+	border-radius: 20px;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.wpcalibrate-fpb-hero__title {
+	margin: 0 0 12px 0;
+	font-size: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 1.3;
+}
+
+.wpcalibrate-fpb-hero__desc {
+	margin: 0 0 20px 0;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #e2e8f0;
+	max-width: 860px;
+}
+
+.wpcalibrate-fpb-hero__actions {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.wpcalibrate-fpb-hero__actions .button-primary {
+	background: #3b82f6;
+	border-color: #2563eb;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wpcalibrate-fpb-hero__actions .button-primary:hover {
+	background: #2563eb;
+	border-color: #1d4ed8;
+}
+
+.wpcalibrate-fpb-hero__actions .button-secondary {
+	background: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.25);
+	color: #ffffff;
+}
+
+.wpcalibrate-fpb-hero__actions .button-secondary:hover {
+	background: rgba(255, 255, 255, 0.2);
+	color: #ffffff;
+}
+
+/* Features Grid */
+.wpcalibrate-fpb-features-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+	margin-top: 20px;
+}
+
+.wpcalibrate-fpb-feature-item {
+	display: flex;
+	gap: 12px;
+	padding: 14px;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+}
+
+.wpcalibrate-fpb-feature-item__icon {
+	font-size: 24px;
+	width: 24px;
+	height: 24px;
+	color: #2563eb;
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.wpcalibrate-fpb-feature-item__content h4 {
+	margin: 0 0 4px 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #1e293b;
+}
+
+.wpcalibrate-fpb-feature-item__content p {
+	margin: 0;
+	font-size: 12px;
+	color: #64748b;
+	line-height: 1.4;
+}
+
+/* Flow Section */
+.wpcalibrate-fpb-flow {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 20px 0;
+	flex-wrap: wrap;
+}
+
+.wpcalibrate-fpb-flow-step {
+	flex: 1;
+	min-width: 170px;
+	background: #f8fafc;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	padding: 16px;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.wpcalibrate-fpb-flow-step__badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #2563eb;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.wpcalibrate-fpb-flow-step__content h4 {
+	margin: 0 0 6px 0;
+	font-size: 13px;
+	font-weight: 600;
+	color: #0f172a;
+}
+
+.wpcalibrate-fpb-flow-step__content p {
+	margin: 0;
+	font-size: 12px;
+	color: #475569;
+	line-height: 1.4;
+}
+
+.wpcalibrate-fpb-flow-arrow {
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	color: #94a3b8;
+	flex-shrink: 0;
+}
+
+/* Guide Steps */
+.wpcalibrate-fpb-guide-steps {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 16px 0;
+}
+
+.wpcalibrate-fpb-guide-step {
+	display: flex;
+	gap: 16px;
+	padding: 16px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-left: 4px solid #2563eb;
+	border-radius: 4px;
+}
+
+.wpcalibrate-fpb-guide-step__number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	background: #eff6ff;
+	color: #1d4ed8;
+	border: 1px solid #bfdbfe;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 14px;
+	flex-shrink: 0;
+}
+
+.wpcalibrate-fpb-guide-step__body h4 {
+	margin: 0 0 4px 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #0f172a;
+}
+
+.wpcalibrate-fpb-guide-step__body p {
+	margin: 0;
+	font-size: 13px;
+	color: #475569;
+	line-height: 1.5;
+}
+
+/* Modes Grid */
+.wpcalibrate-fpb-modes-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 20px;
+	margin: 16px 0;
+}
+
+.wpcalibrate-fpb-mode-card {
+	background: #ffffff;
+	border: 1px solid #cbd5e1;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.wpcalibrate-fpb-mode-card__header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 10px;
+}
+
+.wpcalibrate-fpb-mode-card__title {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: #0f172a;
+}
+
+.wpcalibrate-fpb-mode-card__desc {
+	margin: 0 0 14px 0;
+	font-size: 13px;
+	color: #475569;
+	line-height: 1.5;
+}
+
+.wpcalibrate-fpb-mode-card__example {
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	padding: 12px;
+	font-size: 12px;
+	color: #334155;
+}
+
+.wpcalibrate-fpb-mode-card__example ul {
+	margin: 6px 0 0 0;
+	padding-left: 18px;
+}
+
+.wpcalibrate-fpb-mode-card__example li {
+	margin-bottom: 4px;
+}
+
+/* Tips List */
+.wpcalibrate-fpb-tips-list {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin: 16px 0;
+}
+
+.wpcalibrate-fpb-tip {
+	background: #f8fafc;
+	border-left: 3px solid #0284c7;
+	padding: 12px 16px;
+	border-radius: 0 4px 4px 0;
+}
+
+.wpcalibrate-fpb-tip strong {
+	color: #0f172a;
+	font-size: 13px;
+	display: block;
+	margin-bottom: 4px;
+}
+
+.wpcalibrate-fpb-tip p {
+	margin: 0;
+	font-size: 13px;
+	color: #475569;
+	line-height: 1.5;
+}
+
+.wpcalibrate-fpb-paragraph {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #334155;
+	margin: 0 0 12px 0;
+}
+
+
+/* Toolbar */
+.wpcalibrate-fpb-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.wpcalibrate-fpb-toolbar__title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* Tables & Badges */
+.wpcalibrate-fpb-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.wpcalibrate-fpb-badge--success {
+	background: #e7f6eb;
+	color: #147a28;
+}
+
+.wpcalibrate-fpb-badge--warning {
+	background: #fdf3d8;
+	color: #996800;
+}
+
+.wpcalibrate-fpb-badge--danger {
+	background: #fcf0f0;
+	color: #d63638;
+}
+
+.wpcalibrate-fpb-badge--info {
+	background: #f0f6fc;
+	color: #0969da;
+}
+
+.wpcalibrate-fpb-tag {
+	display: inline-block;
+	background: #f0f0f1;
+	color: #2c3338;
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+/* Toggle Switch */
+.wpcalibrate-fpb-switch {
+	position: relative;
+	display: inline-block;
+	width: 44px;
+	height: 24px;
+}
+
+.wpcalibrate-fpb-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.wpcalibrate-fpb-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #c3c4c7;
+	transition: .2s ease;
+	border-radius: 24px;
+}
+
+.wpcalibrate-fpb-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: .2s ease;
+	border-radius: 50%;
+}
+
+.wpcalibrate-fpb-switch input:checked + .wpcalibrate-fpb-slider {
+	background-color: #2271b1;
+}
+
+.wpcalibrate-fpb-switch input:focus + .wpcalibrate-fpb-slider {
+	box-shadow: 0 0 0 2px #2271b1;
+}
+
+.wpcalibrate-fpb-switch input:checked + .wpcalibrate-fpb-slider:before {
+	transform: translateX(20px);
+}
+
+/* Empty State */
+.wpcalibrate-fpb-empty-state {
+	text-align: center;
+	padding: 60px 20px;
+	background: #ffffff;
+	border: 1px dashed #c3c4c7;
+	border-radius: 8px;
+	margin: 20px 0;
+}
+
+.wpcalibrate-fpb-empty-state__icon {
+	font-size: 54px;
+	width: 54px;
+	height: 54px;
+	color: #a7aaad;
+	margin-bottom: 12px;
+}
+
+.wpcalibrate-fpb-empty-state h3 {
+	margin: 0 0 8px 0;
+	font-size: 18px;
+	color: #1d2327;
+}
+
+.wpcalibrate-fpb-empty-state p {
+	color: #646970;
+	max-width: 480px;
+	margin: 0 auto 20px auto;
+}
+
+/* Form Styles */
+.wpcalibrate-fpb-form .form-table th {
+	width: 240px;
+	font-weight: 600;
+}
+
+.wpcalibrate-fpb-form .required {
+	color: #d63638;
+}
+
+.wpcalibrate-fpb-choice-table input,
+.wpcalibrate-fpb-meta-table input,
+.wpcalibrate-fpb-meta-table select {
+	box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+	.wpcalibrate-fpb-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.wpcalibrate-fpb-form .form-table th {
+		width: 100%;
+	}
+}

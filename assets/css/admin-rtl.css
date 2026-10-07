@@ -1,0 +1,43 @@
+/**
+ * WPCalibrate Form Payment Bridge Admin RTL Styles
+ *
+ * @package WPCalibrate\FormPaymentBridge
+ */
+
+.wpcalibrate-fpb-header__version {
+	margin-left: 0;
+	margin-right: 8px;
+}
+
+.wpcalibrate-fpb-switch input:checked + .wpcalibrate-fpb-slider:before {
+	transform: translateX(-20px);
+}
+
+.wpcalibrate-fpb-switch .wpcalibrate-fpb-slider:before {
+	left: auto;
+	right: 3px;
+}
+
+.wpcalibrate-fpb-card {
+	direction: rtl;
+}
+
+.wpcalibrate-fpb-flow-arrow {
+	transform: rotate(180deg);
+}
+
+.wpcalibrate-fpb-guide-step {
+	border-left: 1px solid #e2e8f0;
+	border-right: 4px solid #2563eb;
+}
+
+.wpcalibrate-fpb-tip {
+	border-left: none;
+	border-right: 3px solid #0284c7;
+	border-radius: 4px 0 0 4px;
+}
+
+.wpcalibrate-fpb-table th,
+.wpcalibrate-fpb-table td {
+	text-align: right;
+}
